@@ -35,6 +35,28 @@ let repeat = function<a>(f: Fun<a,a>, n: number): Fun<a,a> {
     return n > 0 ? f.then(repeat(f, n - 1)) : f;
 }
 
+let repeatUntil = function<a>(f: Fun<a, a>, predicate: Fun<a, boolean>) : Fun<a, a> {
+    let g = (x: a) => {
+        if (predicate.f(x)) {
+            //COMPLETE
+        } else {
+            //COMPLETE
+        }
+    }
+    return //COMPLETE
+}
+
+repeatUntil: function(this: Fun<a, a>): Fun<Fun<a, boolean>, Fun<a, a>> {
+  return {
+        f: f,
+        then: function <c>(this: Fun<a, b>, g: Fun<b, c>): Fun<a, c> {
+            return Fun<a, c>(a => g.f(this.f(a)))},
+        repeatUntil: function(this: Fun<a, a>): Fun<(_: a) => boolean, Fun<a, a>> {
+            //COMPLETE
+        }
+    }
+}
+
 // Functions
 let increment = Fun<number, number>(x => x + 1) // given a, returns a b (a+1)
 let double = Fun<number, number>(x => x + x)
