@@ -2,12 +2,12 @@
   "devDependencies": {
     "typescript": "^2.7.1"
   },
-  "name": "test",
+  "name": "typescript",
   "version": "1.0.0",
-  "main": "test.js",
+  "main": "lecture_01.ts",
   "license": "MIT",
   "scripts": {
     "build": "tsc -w -pretty",
-    "run": "node build/test.js"
+    "run": "node build/lecture_02.js"
   }
 }
