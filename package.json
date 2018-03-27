@@ -1,13 +1,14 @@
 {
   "devDependencies": {
+    "immutable": "^3.8.2",
     "typescript": "^2.7.1"
   },
   "name": "typescript",
   "version": "1.0.0",
-  "main": "lecture_01.ts",
+  "main": "lecture_03.ts",
   "license": "MIT",
   "scripts": {
     "build": "tsc -w -pretty",
-    "run": "node build/lecture_02.js"
+    "run": "node build/lecture_06_code.js"
   }
 }
